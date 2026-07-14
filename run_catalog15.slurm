@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --job-name=gwcatalog
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --error=logs/%x_%j.err
+
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=32G
+#SBATCH --time=36:00:00
+
+# CHANGE THIS TO THE CLUSTER'S PARTITION
+#SBATCH --partition=compute
+
+set -euo pipefail
+
+mkdir -p logs
+
+cd "$SLURM_SUBMIT_DIR"
+
+module purge
+
+# Activate your environment
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate gw
+
+EVENT=$1
+
+python run_catalog15.py \
+    "$EVENT" \
+    --npool "$SLURM_CPUS_PER_TASK"
