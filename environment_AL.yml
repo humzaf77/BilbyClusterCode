@@ -1,14 +1,17 @@
 name: BilbyEnv
 channels:
-  - defaults
+  - conda-forge
+  - nodefaults
 dependencies:
   - python=3.11
   - numpy
+  - scipy
   - matplotlib
-  - pycbc
+  - astropy <6
+  - gsl
   - lalsuite
   - bilby
+  - pycbc
+  - gwpy
+  - gwosc
   - jupyter
-  - scipy
-  - astropy[version='<6']
-prefix: /opt/miniconda3/envs/gwcausal
