@@ -79,7 +79,6 @@ try:
 except Exception:
     HAVE_GWOSC = False
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from kernel import chi
 
 MPC_SEC = 3.0857e22 / 2.998e8
