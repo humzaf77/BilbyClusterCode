@@ -1,0 +1,84 @@
+11:46 bilby INFO    : No prior given, using default BBH priors in /resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+11:46 bilby INFO    : Waveform generator instantiated: WaveformGenerator(duration=8.0, sampling_frequency=2048.0, start_time=0, frequency_domain_source_model=bilby.gw.source.lal_binary_black_hole, time_domain_source_model=None, parameter_conversion=bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters, waveform_arguments={'waveform_approximant': 'IMRPhenomXPHM', 'reference_frequency': 20.0, 'minimum_frequency': 20.0})
+11:46 bilby INFO    : Running for label 'GW190630_185205_gr_v1', output will be saved to 'runs/GW190630_185205_gr_v1'
+11:46 bilby INFO    : Analysis priors:
+11:46 bilby INFO    : mass_ratio=Uniform(minimum=0.3, maximum=1.0, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+11:46 bilby INFO    : chirp_mass=Uniform(minimum=18, maximum=44, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+11:46 bilby INFO    : luminosity_distance=bilby.gw.prior.UniformSourceFrame(minimum=200.0, maximum=3000.0, cosmology='Planck15', name='luminosity_distance', latex_label='$d_L$', unit='Mpc', boundary=None)
+11:46 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+11:46 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+11:46 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+11:46 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+11:46 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+11:46 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.8, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+11:46 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.8, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+11:46 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+11:46 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+11:46 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+11:46 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+11:46 bilby INFO    : geocent_time=Uniform(minimum=1245955943.0, maximum=1245955943.1999998, name='geocent_time', latex_label='$t_c$', unit=None, boundary=None)
+11:46 bilby INFO    : mass_1=Constraint(minimum=10, maximum=80, name=None, latex_label=None, unit=None)
+11:46 bilby INFO    : mass_2=Constraint(minimum=10, maximum=80, name=None, latex_label=None, unit=None)
+11:46 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+11:46 bilby INFO    : Analysis likelihood noise evidence: -15505.794350332959
+Traceback (most recent call last):
+  File "/resnick/groups/RelativityTheory/alaeuger/BilbyClusterCode/run_catalog15.py", line 460, in <module>
+    main()
+  File "/resnick/groups/RelativityTheory/alaeuger/BilbyClusterCode/run_catalog15.py", line 442, in main
+    results = [r for n in names if (r := run_event(n, args.npool, args.dry))]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/BilbyClusterCode/run_catalog15.py", line 442, in <listcomp>
+    results = [r for n in names if (r := run_event(n, args.npool, args.dry))]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/BilbyClusterCode/run_catalog15.py", line 360, in run_event
+    gr = run_or_load(cfg, ifos, bilby.gw.source.lal_binary_black_hole,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/BilbyClusterCode/run_catalog15.py", line 344, in run_or_load
+    return bilby.run_sampler(
+           ^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/core/sampler/__init__.py", line 273, in run_sampler
+    sampler = sampler_class(
+              ^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/core/sampler/dynesty.py", line 238, in __init__
+    super(Dynesty, self).__init__(
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/core/sampler/base_sampler.py", line 267, in __init__
+    self._verify_parameters()
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/core/sampler/base_sampler.py", line 436, in _verify_parameters
+    self.log_likelihood(theta)
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/core/sampler/base_sampler.py", line 905, in log_likelihood
+    return Sampler.log_likelihood(self, theta)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/core/sampler/base_sampler.py", line 563, in log_likelihood
+    return _safe_likelihood_call(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/core/likelihood.py", line 57, in _safe_likelihood_call
+    logl = method(parameters=parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/likelihood/base.py", line 894, in log_likelihood
+    return self.log_likelihood_ratio(parameters=parameters) + self.noise_log_likelihood()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/likelihood/base.py", line 414, in log_likelihood_ratio
+    self.waveform_generator.frequency_domain_strain(parameters)
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/waveform_generator.py", line 124, in frequency_domain_strain
+    return self._calculate_strain(model=self.frequency_domain_source_model,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/waveform_generator.py", line 174, in _calculate_strain
+    model_strain = self._strain_from_model(model_data_points, model, parameters)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/waveform_generator.py", line 184, in _strain_from_model
+    return model(model_data_points, **parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/source.py", line 343, in lal_binary_black_hole
+    return _base_lal_cbc_fd_waveform(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/source.py", line 596, in _base_lal_cbc_fd_waveform
+    import lalsimulation as lalsim
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/lalsimulation/__init__.py", line 2, in <module>
+    from .lalsimulation import *
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/lalsimulation/lalsimulation.py", line 8, in <module>
+    import lal
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/lal/__init__.py", line 8, in <module>
+    from .lal import *
+  File "/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/lal/lal.py", line 10, in <module>
+    from ._lal import *
+ImportError: /lib64/libgsl.so.25: undefined symbol: cblas_ctrmv
