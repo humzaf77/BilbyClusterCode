@@ -1,0 +1,14 @@
+name: gw
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
+  - pycbc
+  - lalsuite
+  - bilby
+  - jupyter
+  - scipy
+  - astropy[version='<6']
+prefix: /opt/miniconda3/envs/gwcausal
