@@ -1,0 +1,299 @@
+14:04 bilby INFO    : No prior given, using default BBH priors in /resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+14:04 bilby INFO    : Waveform generator instantiated: WaveformGenerator(duration=16.0, sampling_frequency=2048.0, start_time=0, frequency_domain_source_model=bilby.gw.source.lal_binary_black_hole, time_domain_source_model=None, parameter_conversion=bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters, waveform_arguments={'waveform_approximant': 'IMRPhenomXPHM', 'reference_frequency': 20.0, 'minimum_frequency': 20.0})
+14:04 bilby INFO    : Running for label 'GW190412_gr_v1', output will be saved to 'runs/GW190412_gr_v1'
+14:04 bilby INFO    : Using lal version 7.7.0
+14:04 bilby INFO    : Using lal git version Branch: None;Tag: lal-v7.7.0;Id: ef36dfdf49181b9b376a867b55a14463783de545;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+14:04 bilby INFO    : Using lalsimulation version 6.2.0
+14:04 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsimulation-v6.2.0;Id: 1338470a6165fb4b4c98bccdd0efe961f05bc8e0;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+14:04 bilby INFO    : Analysis priors:
+14:04 bilby INFO    : mass_ratio=Uniform(minimum=0.1, maximum=0.6, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+14:04 bilby INFO    : chirp_mass=Uniform(minimum=10, maximum=25, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+14:04 bilby INFO    : luminosity_distance=bilby.gw.prior.UniformSourceFrame(minimum=150.0, maximum=2000.0, cosmology='Planck15', name='luminosity_distance', latex_label='$d_L$', unit='Mpc', boundary=None)
+14:04 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+14:04 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+14:04 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+14:04 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+14:04 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+14:04 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.8, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+14:04 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.8, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+14:04 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+14:04 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+14:04 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+14:04 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+14:04 bilby INFO    : geocent_time=Uniform(minimum=1239082262.0, maximum=1239082262.1999998, name='geocent_time', latex_label='$t_c$', unit=None, boundary=None)
+14:04 bilby INFO    : mass_1=Constraint(minimum=5, maximum=60, name=None, latex_label=None, unit=None)
+14:04 bilby INFO    : mass_2=Constraint(minimum=5, maximum=60, name=None, latex_label=None, unit=None)
+14:04 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+14:04 bilby INFO    : Analysis likelihood noise evidence: -52612.829847634435
+14:04 bilby INFO    : Single likelihood evaluation took 2.438e-02 s
+14:04 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 1500, 'bound': 'multi', 'sample': 'rwalk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'rstate': None, 'queue_size': 16, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'enlarge': None, 'bootstrap': None, 'walks': 50, 'facc': 0.2, 'slices': None, 'ncdim': None, 'blob': False, 'save_evaluation_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x7f28d4321f50>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+14:04 bilby INFO    : Global meta data was removed from the result object for compatibility. Use the `BILBY_INCLUDE_GLOBAL_METADATA` environment variable to include it. This behaviour will be removed in a future release. For more details see: https://bilby-dev.github.io/bilby/faq.html#global-meta-data
+14:04 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+14:04 bilby INFO    : Using dynesty version 3.0.0
+14:04 bilby INFO    : Setting up multiproccesing pool with 16 processes
+14:04 bilby INFO    : Resume file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle does not exist.
+14:04 bilby INFO    : Generating initial points from the prior
+14:05 bilby INFO    : Using the bilby-implemented ensemble rwalk sampling method with ACT estimated chain length. An average of 4 steps will be accepted up to chain length 5000.
+14:15 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+14:25 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+14:35 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+14:45 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+14:55 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:06 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+15:16 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:26 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:36 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:46 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:57 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+16:07 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+16:17 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+16:27 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+16:38 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+16:48 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+16:58 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+17:09 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+17:19 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+17:29 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+17:40 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+17:50 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+18:01 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+18:11 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+18:21 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+18:32 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+18:42 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+18:53 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+19:03 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+19:13 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+19:24 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+19:34 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+19:45 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+19:55 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+20:06 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+20:16 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+20:26 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+20:37 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+20:47 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+20:58 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+21:08 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+21:19 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+21:29 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+21:40 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+21:51 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+22:01 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+22:12 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+22:23 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+22:33 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+22:44 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+22:54 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+23:05 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+23:15 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+23:26 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+23:36 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+23:47 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+23:57 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+00:08 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+00:19 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+00:29 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+00:40 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+00:50 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+01:01 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+01:11 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+01:22 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+01:32 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+01:43 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+01:54 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+02:04 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+02:15 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+02:25 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+02:36 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+02:46 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+02:57 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+03:07 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+03:18 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+03:28 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+03:39 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+03:50 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+04:01 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+04:11 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+04:22 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+04:33 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+04:43 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+04:54 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+05:05 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+05:15 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+05:26 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+05:37 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+05:48 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+05:58 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+06:09 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+06:19 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+06:30 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+06:41 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+06:52 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+07:02 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+07:13 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+07:23 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+07:34 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+07:45 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+07:56 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+08:06 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+08:17 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+08:28 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+08:39 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+08:50 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+09:00 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+09:11 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+09:21 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+09:32 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+09:42 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+09:53 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+10:04 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+10:14 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+10:25 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+10:36 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+10:46 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+10:57 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+11:07 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+11:18 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+11:28 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+11:39 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+11:44 bilby INFO    : Written checkpoint file runs/GW190412_gr_v1/GW190412_gr_v1_resume.pickle
+11:44 bilby INFO    : Starting to close worker pool.
+11:44 bilby INFO    : Finished closing worker pool.
+11:44 bilby INFO    : Rejection sampling nested samples to obtain 12011 posterior samples
+11:44 bilby INFO    : Sampling time: 21:39:55.804580
+11:44 bilby WARNING : Result.save_to_file called with extension=True. This will default to json, and ignore the extension from the filename. This behaviour is deprecated and will be removed. 
+11:45 bilby WARNING : Result.save_to_file called with extension=True. This will default to json, and ignore the extension from the filename. This behaviour is deprecated and will be removed. 
+11:45 bilby INFO    : Summary of results:
+nsamples: 12011
+ln_noise_evidence: -52612.830
+ln_evidence: -52411.593 +/-  0.177
+ln_bayes_factor: 201.236 +/-  0.177
+
+11:45 bilby INFO    : No prior given, using default BBH priors in /resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+11:45 bilby INFO    : Waveform generator instantiated: WaveformGenerator(duration=16.0, sampling_frequency=2048.0, start_time=0, frequency_domain_source_model=__main__.kernel_bbh, time_domain_source_model=None, parameter_conversion=bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters, waveform_arguments={'waveform_approximant': 'IMRPhenomXPHM', 'reference_frequency': 20.0, 'minimum_frequency': 20.0})
+11:45 bilby INFO    : Running for label 'GW190412_kernel_v1', output will be saved to 'runs/GW190412_kernel_v1'
+11:45 bilby INFO    : Using lal version 7.7.0
+11:45 bilby INFO    : Using lal git version Branch: None;Tag: lal-v7.7.0;Id: ef36dfdf49181b9b376a867b55a14463783de545;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+11:45 bilby INFO    : Using lalsimulation version 6.2.0
+11:45 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsimulation-v6.2.0;Id: 1338470a6165fb4b4c98bccdd0efe961f05bc8e0;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+11:45 bilby INFO    : Analysis priors:
+11:45 bilby INFO    : mass_ratio=Uniform(minimum=0.1, maximum=0.6, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+11:45 bilby INFO    : chirp_mass=Uniform(minimum=10, maximum=25, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+11:45 bilby INFO    : luminosity_distance=bilby.gw.prior.UniformSourceFrame(minimum=150.0, maximum=2000.0, cosmology='Planck15', name='luminosity_distance', latex_label='$d_L$', unit='Mpc', boundary=None)
+11:45 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+11:45 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+11:45 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+11:45 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+11:45 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+11:45 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.8, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+11:45 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.8, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+11:45 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+11:45 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+11:45 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+11:45 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+11:45 bilby INFO    : geocent_time=Uniform(minimum=1239082262.0, maximum=1239082262.1999998, name='geocent_time', latex_label='$t_c$', unit=None, boundary=None)
+11:45 bilby INFO    : eps=LogUniform(minimum=1e-25, maximum=1e-19, name='eps', latex_label='eps', unit=None, boundary=None)
+11:45 bilby INFO    : f0_res=Uniform(minimum=20, maximum=200, name='f0_res', latex_label='f0_res', unit=None, boundary=None)
+11:45 bilby INFO    : gamma_res=LogUniform(minimum=1, maximum=50, name='gamma_res', latex_label='gamma_res', unit=None, boundary=None)
+11:45 bilby INFO    : mass_1=Constraint(minimum=5, maximum=60, name=None, latex_label=None, unit=None)
+11:45 bilby INFO    : mass_2=Constraint(minimum=5, maximum=60, name=None, latex_label=None, unit=None)
+11:45 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+11:45 bilby INFO    : Analysis likelihood noise evidence: -52612.829847634435
+11:45 bilby INFO    : Single likelihood evaluation took 2.618e-02 s
+11:45 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 1500, 'bound': 'multi', 'sample': 'rwalk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'rstate': None, 'queue_size': 16, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'enlarge': None, 'bootstrap': None, 'walks': 50, 'facc': 0.2, 'slices': None, 'ncdim': None, 'blob': False, 'save_evaluation_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x7f28f3a58050>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+11:45 bilby INFO    : Global meta data was removed from the result object for compatibility. Use the `BILBY_INCLUDE_GLOBAL_METADATA` environment variable to include it. This behaviour will be removed in a future release. For more details see: https://bilby-dev.github.io/bilby/faq.html#global-meta-data
+11:45 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+11:45 bilby INFO    : Using dynesty version 3.0.0
+11:45 bilby INFO    : Setting up multiproccesing pool with 16 processes
+11:45 bilby INFO    : Resume file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle does not exist.
+11:45 bilby INFO    : Generating initial points from the prior
+11:45 bilby INFO    : Using the bilby-implemented ensemble rwalk sampling method with ACT estimated chain length. An average of 4 steps will be accepted up to chain length 5000.
+11:56 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+12:06 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+12:16 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+12:26 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+12:36 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+12:46 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+12:56 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+12:56 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:56 bilby WARNING : Failed to create dynesty state plot at checkpoint
+12:56 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:56 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+12:56 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:56 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:07 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+13:17 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+13:17 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:17 bilby WARNING : Failed to create dynesty state plot at checkpoint
+13:17 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:17 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+13:17 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:27 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+13:37 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+13:37 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:37 bilby WARNING : Failed to create dynesty state plot at checkpoint
+13:37 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:37 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+13:37 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:47 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+13:47 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:47 bilby WARNING : Failed to create dynesty state plot at checkpoint
+13:47 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:47 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+13:47 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:58 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+14:08 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+14:08 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+14:08 bilby WARNING : Failed to create dynesty state plot at checkpoint
+14:08 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+14:08 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+14:08 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+14:08 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:18 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+14:29 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+14:39 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+14:49 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+15:00 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+15:10 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+15:20 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle
+15:31 bilby INFO    : Written checkpoint file runs/GW190412_kernel_v1/GW190412_kernel_v1_resume.pickle

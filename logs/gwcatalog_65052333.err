@@ -1,0 +1,37 @@
+13:55 bilby INFO    : No prior given, using default BBH priors in /resnick/groups/RelativityTheory/alaeuger/miniconda3/envs/BilbyEnv/lib/python3.11/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+13:55 bilby INFO    : Waveform generator instantiated: WaveformGenerator(duration=8.0, sampling_frequency=2048.0, start_time=0, frequency_domain_source_model=bilby.gw.source.lal_binary_black_hole, time_domain_source_model=None, parameter_conversion=bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters, waveform_arguments={'waveform_approximant': 'IMRPhenomXPHM', 'reference_frequency': 20.0, 'minimum_frequency': 20.0})
+13:55 bilby INFO    : Running for label 'GW170104_gr_v1', output will be saved to 'runs/GW170104_gr_v1'
+13:55 bilby INFO    : Using lal version 7.7.0
+13:55 bilby INFO    : Using lal git version Branch: None;Tag: lal-v7.7.0;Id: ef36dfdf49181b9b376a867b55a14463783de545;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+13:55 bilby INFO    : Using lalsimulation version 6.2.0
+13:55 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsimulation-v6.2.0;Id: 1338470a6165fb4b4c98bccdd0efe961f05bc8e0;;Builder: Adam Mercer <adam.mercer@ligo.org>;Repository status: CLEAN: All modifications committed
+13:55 bilby INFO    : Analysis priors:
+13:55 bilby INFO    : mass_ratio=Uniform(minimum=0.3, maximum=1.0, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+13:55 bilby INFO    : chirp_mass=Uniform(minimum=15, maximum=38, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+13:55 bilby INFO    : luminosity_distance=bilby.gw.prior.UniformSourceFrame(minimum=200.0, maximum=3000.0, cosmology='Planck15', name='luminosity_distance', latex_label='$d_L$', unit='Mpc', boundary=None)
+13:55 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+13:55 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+13:55 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+13:55 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+13:55 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+13:55 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.8, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+13:55 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.8, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+13:55 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+13:55 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+13:55 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+13:55 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+13:55 bilby INFO    : geocent_time=Uniform(minimum=1167559936.5, maximum=1167559936.6999998, name='geocent_time', latex_label='$t_c$', unit=None, boundary=None)
+13:55 bilby INFO    : mass_1=Constraint(minimum=8, maximum=80, name=None, latex_label=None, unit=None)
+13:55 bilby INFO    : mass_2=Constraint(minimum=8, maximum=80, name=None, latex_label=None, unit=None)
+13:55 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+13:55 bilby INFO    : Analysis likelihood noise evidence: -8901.575702655573
+13:55 bilby INFO    : Single likelihood evaluation took 1.377e-02 s
+13:55 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 1500, 'bound': 'multi', 'sample': 'rwalk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'rstate': None, 'queue_size': 16, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'enlarge': None, 'bootstrap': None, 'walks': 50, 'facc': 0.2, 'slices': None, 'ncdim': None, 'blob': False, 'save_evaluation_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x7f4f6cc31290>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+13:55 bilby INFO    : Global meta data was removed from the result object for compatibility. Use the `BILBY_INCLUDE_GLOBAL_METADATA` environment variable to include it. This behaviour will be removed in a future release. For more details see: https://bilby-dev.github.io/bilby/faq.html#global-meta-data
+13:55 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+13:55 bilby INFO    : Using dynesty version 3.0.0
+13:55 bilby INFO    : Setting up multiproccesing pool with 16 processes
+13:55 bilby INFO    : Resume file runs/GW170104_gr_v1/GW170104_gr_v1_resume.pickle does not exist.
+13:55 bilby INFO    : Generating initial points from the prior
+13:56 bilby INFO    : Using the bilby-implemented ensemble rwalk sampling method with ACT estimated chain length. An average of 4 steps will be accepted up to chain length 5000.
+[2026-07-14T14:00:34.607] error: *** JOB 65052333 ON hpc-23-15 CANCELLED AT 2026-07-14T14:00:34 DUE to SIGNAL Terminated ***
