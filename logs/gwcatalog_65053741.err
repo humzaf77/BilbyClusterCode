@@ -230,3 +230,39 @@ ln_bayes_factor: 28.174 +/-  0.136
 15:19 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
 15:30 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
 15:40 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+15:51 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+16:02 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+16:12 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+16:23 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+16:34 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+16:45 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+16:56 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+17:07 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+17:18 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+17:28 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+17:40 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+17:51 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+18:02 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+18:13 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+18:24 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+18:35 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+18:46 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+18:57 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+19:08 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+19:19 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+19:30 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+19:41 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+19:51 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+20:01 bilby INFO    : Written checkpoint file runs/GW151012_kernel_v1/GW151012_kernel_v1_resume.pickle
+20:01 bilby INFO    : Starting to close worker pool.
+20:01 bilby INFO    : Finished closing worker pool.
+20:01 bilby INFO    : Rejection sampling nested samples to obtain 8541 posterior samples
+20:01 bilby INFO    : Sampling time: 14:50:25.047082
+20:01 bilby WARNING : Result.save_to_file called with extension=True. This will default to json, and ignore the extension from the filename. This behaviour is deprecated and will be removed. 
+20:01 bilby WARNING : Result.save_to_file called with extension=True. This will default to json, and ignore the extension from the filename. This behaviour is deprecated and will be removed. 
+20:01 bilby INFO    : Summary of results:
+nsamples: 8541
+ln_noise_evidence: -15272.127
+ln_evidence: -15244.264 +/-  0.133
+ln_bayes_factor: 27.864 +/-  0.133
+

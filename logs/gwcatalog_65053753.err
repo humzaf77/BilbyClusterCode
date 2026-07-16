@@ -34,3 +34,4 @@
 14:04 bilby INFO    : Resume file runs/GW191216_213338_gr_v1/GW191216_213338_gr_v1_resume.pickle does not exist.
 14:04 bilby INFO    : Generating initial points from the prior
 14:04 bilby INFO    : Using the bilby-implemented ensemble rwalk sampling method with ACT estimated chain length. An average of 4 steps will be accepted up to chain length 5000.
+[2026-07-16T02:04:19.009] error: *** JOB 65053753 ON hpc-83-26 CANCELLED AT 2026-07-16T02:04:19 DUE TO TIME LIMIT ***

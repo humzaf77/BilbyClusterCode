@@ -231,3 +231,69 @@ ln_bayes_factor: 68.949 +/-  0.141
 15:19 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
 15:30 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
 15:40 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+15:51 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+16:02 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+16:12 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+16:23 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+16:33 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+16:44 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+16:54 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+17:05 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+17:16 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+17:26 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+17:37 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+17:47 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+17:58 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+18:08 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+18:19 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+18:29 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+18:40 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+18:51 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+19:01 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+19:12 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+19:22 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+19:33 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+19:44 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+19:55 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+20:05 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+20:16 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+20:26 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+20:37 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+20:48 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+20:59 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+21:09 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+21:20 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+21:31 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+21:42 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+21:52 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+22:03 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+22:13 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+22:24 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+22:35 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+22:46 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+22:56 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+23:07 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+23:17 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+23:28 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+23:39 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+23:49 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+00:00 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+00:10 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+00:21 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+00:32 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+00:43 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+00:54 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+01:04 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+01:07 bilby INFO    : Written checkpoint file runs/GW190512_180714_kernel_v1/GW190512_180714_kernel_v1_resume.pickle
+01:08 bilby INFO    : Starting to close worker pool.
+01:08 bilby INFO    : Finished closing worker pool.
+01:08 bilby INFO    : Rejection sampling nested samples to obtain 10051 posterior samples
+01:08 bilby INFO    : Sampling time: 16:41:08.856256
+01:08 bilby WARNING : Result.save_to_file called with extension=True. This will default to json, and ignore the extension from the filename. This behaviour is deprecated and will be removed. 
+01:08 bilby WARNING : Result.save_to_file called with extension=True. This will default to json, and ignore the extension from the filename. This behaviour is deprecated and will be removed. 
+01:08 bilby INFO    : Summary of results:
+nsamples: 10051
+ln_noise_evidence: -53384.702
+ln_evidence: -53316.277 +/-  0.147
+ln_bayes_factor: 68.426 +/-  0.147
+
